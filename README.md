@@ -26,4 +26,4 @@
    
 3. 其它好文
    + [移动端Web适配的两种做法思路总结](http://blog.csdn.net/azureternite/article/details/52528380)
-   + [腾讯移动web前端知识库](https://github.com/AlloyTeam/Mars)
+
