@@ -23,6 +23,9 @@
    + [移动端有哪些](https://github.com/TongDaDa/mobile-knowledge/base/mobileTypes.md)
 2. 适配
    + [适配方式](https://github.com/TongDaDa/mobile-knowledge/base/way.md)
-   
-3. 其它好文
+
+3. 微信开发
+
+4. 其它好文
    + [移动端Web适配的两种做法思路总结](http://blog.csdn.net/azureternite/article/details/52528380)
+   + [腾讯移动web前端知识库](https://github.com/AlloyTeam/Mars)
