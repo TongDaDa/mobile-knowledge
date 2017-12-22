@@ -18,23 +18,26 @@
 1. 基础
 
    + 硬件设备
-     + [像素到底是什么](https://github.com/TongDaDa/mobile-knowledge/base/pixel.md)
-     + [逐行扫描与隔行扫描](https://github.com/TongDaDa/mobile-knowledge/base/scan.md)
-     + [Retina视网膜屏幕](https://github.com/TongDaDa/mobile-knowledge/base/retina.md)
-     + [设备分辨率](https://github.com/TongDaDa/mobile-knowledge/base/retina.md)
+     + [像素到底是什么](https://github.com/TongDaDa/mobile-knowledge/blob/master/base/pixel.md)
+     + [逐行扫描与隔行扫描](https://github.com/TongDaDa/mobile-knowledge/blob/master/base/scan.md)
+     + [Retina视网膜屏幕](https://github.com/TongDaDa/mobile-knowledge/blob/master/base/retina.md)
 
    + 客户端
-     + [dpr与dppx](ttps://github.com/TongDaDa/mobile-knowledge/base/dpr.md)
+     + [dpr与css像素](https://github.com/TongDaDa/mobile-knowledge/base/dpr.md)
      + [viewport](https://github.com/TongDaDa/mobile-knowledge/base/viewport.md)
      + [css适配单位](https://github.com/TongDaDa/mobile-knowledge/base/cssUnit.md)
+     + [web in mobile 有哪些?](https://github.com/TongDaDa/mobile-knowledge/base/mobileTypes.md)
 
 2. 开发方案
-   + [web in mobile 有哪些?](https://github.com/TongDaDa/mobile-knowledge/base/mobileTypes.md)
-   + [适配方案](https://github.com/TongDaDa/mobile-knowledge/base/way.md)
+
+   + [ios及其他机型常见问题](https://github.com/TongDaDa/mobile-knowledge/blob/master/engineering/issue.md)
+   + [移动端适配方案集锦](https://github.com/TongDaDa/mobile-knowledge/blob/master/engineering/way.md)
 
 3. 微信开发
    + [微信系列问题](https://github.com/TongDaDa/mobile-knowledge/kind/weChat.md)
+   +
 
 4. 其它移动端知识库
    + [移动端Web适配的两种做法思路总结](http://blog.csdn.net/azureternite/article/details/52528380)
    + [腾讯移动web前端知识库](https://github.com/AlloyTeam/Mars)
+   + [w3cPlus](https://www.w3cplus.com)
