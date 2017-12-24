@@ -9,23 +9,27 @@ dpr 是 devicePixelRatio(设备像素比) 的简写,此属性位于全局当中(
 
 device pixel(物理像素) = window.devicePixelRetio * css px
 
-我们页面上的每个css像素都通过以上这个公式来转换，从而计算出物理像素反应到设备上。
-
 #### 它出现的意义?
 
 web发展快速，如今伴随着HTML5技术，如微信端，hybrid等场景的出现，现在的网页三剑客完全可以占据一部分移动端市场。显示屏技术也发生了
 日新月异的变化，自从iphone4发布retina屏幕之后，其他的厂商如oppo,三星等都已经推出了自己的高清屏幕。
 
-在这之前建议看一下我的
-与 [什么是像素](https://github.com/TongDaDa/mobile-knowledge/blob/master/base/pixel.md) 两篇内容.
+ 在这之前建议看一下我的
+     [什么是像素](https://github.com/TongDaDa/mobile-knowledge/blob/master/base/pixel.md),
+     [viewport](https://github.com/TongDaDa/mobile-knowledge/blob/master/base/viewport.md)
+ 两篇内容.
 
 我们先假设，如果没有devicePixelRatio的出现，即css像素 1px 对应物理像素的 1px ，在`小设备`上到底是啥样的呢？
 
-因为没有办法实现去除此属性，所以我使用ps模拟了一下(调整ppi)。
+在ps上模拟大概是这样
 
 <img src="https://github.com/TongDaDa/mobile-knowledge/blob/master/img/ppiExample.png?raw=true" />
 
-可见，它的体验效果并不好，因为通常pc厂商不会把ppi配置太高，毕竟视距与移动端不一样。所以导致了两端的像素不能完全统一。
+反应到页面上是这样的(这里使用viewport标签来模拟)
+
+<img src="https://github.com/TongDaDa/mobile-knowledge/blob/master/img/screenPhoneUp.png?raw=true" />
+
+可见，它的体验效果并不好，因为通常pc厂商不会把ppi配置太高，毕竟视距与移动端不一样。所以导致了两端的分辨率差距较大。
 
 浏览器为了解决这个问题，才出现了 devicePixelRatio 这个api，我认为它是浏览器厂商根据手机ppi所设置的比例值.
 
@@ -41,13 +45,11 @@ iphone4, 4s, 5, 5s, 6, 6s的ppi都是326，dpr都是2，6+和6s+ppi是441，dpr�
 
 <img src="https://github.com/TongDaDa/mobile-knowledge/blob/master/img/iphone-dpi.png?raw=true" />
 
-### dppx
-
-dppx 表示一个css像素可以有表示多少个物理像素，与dpr都是一样的，只是说法不一样。
+以上是苹果机型的ppi与dpr对照表，我想大家已经发现了，`ppi越大，dpr也就越大`。
 
 文献
 
-[问答-dpr与dppx的区别？](https://www.zhihu.com/question/29226201)
+[MDN](https://developer.mozilla.org/en-US/docs/Web/API/Window/devicePixelRatio)
 
 [问答-dp*单位的来源及疑问？](https://www.zhihu.com/question/29226201)
 

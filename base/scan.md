@@ -41,3 +41,28 @@ FPS指的是**每秒**更新的频率(也就是每秒切换多少张图片)，�
 既然一帧渲染不了所有行，那就两帧呗，隔行扫描应运而生，它先渲染奇数行，之后第二次渲染偶数行。
 
 只要频率高，两次扫描的间隔的衰减是看不出来的。
+
+
+### css queries
+
+我们可以通过 css 媒体查询来查看设备是属于哪种屏幕
+
+```
+    p {
+      font-family: cursive;
+    }
+
+    @media (scan: interlace) {
+      p {
+        font-family: sans-serif;
+      }
+    }
+
+    @media (scan: progressive) {
+      p {
+        font-family: serif;
+      }
+    }
+```
+
+这样，我们可以在两种不同的屏幕上进行布局以及动画的选择。

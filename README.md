@@ -4,7 +4,7 @@
 ***\@2x.png
 
 整个ui图的尺寸是 750 * 1300, 当我把切图放入页面中时，我对产品经理说，
-这切的什么破图？能不能专业点？之后的事情大家也可能想到了，非常打脸，无地自容。
+这图也太大了吧？能不能专业点？之后的事情大家也可能想到了，非常打脸，无地自容。
 
 
 ## 移动端知识
@@ -23,15 +23,17 @@
      + [Retina视网膜屏幕](https://github.com/TongDaDa/mobile-knowledge/blob/master/base/retina.md)
 
    + 客户端
-     + [dpr与css像素](https://github.com/TongDaDa/mobile-knowledge/base/dpr.md)
-     + [viewport](https://github.com/TongDaDa/mobile-knowledge/base/viewport.md)
-     + [css适配单位](https://github.com/TongDaDa/mobile-knowledge/base/cssUnit.md)
+     + [dpr与css像素](https://github.com/TongDaDa/mobile-knowledge/blob/master/base/dpr.md)
+     + [viewport](https://github.com/TongDaDa/mobile-knowledge/blob/master/base/viewport.md)
+     + [css适配单位](https://github.com/TongDaDa/mobile-knowledge/blob/master/base/cssUnit.md)
      + [web in mobile 有哪些?](https://github.com/TongDaDa/mobile-knowledge/base/mobileTypes.md)
 
 2. 开发方案
 
-   + [ios及其他机型常见问题](https://github.com/TongDaDa/mobile-knowledge/blob/master/engineering/issue.md)
    + [移动端适配方案集锦](https://github.com/TongDaDa/mobile-knowledge/blob/master/engineering/way.md)
+   + [图片资源加载及工具](https://github.com/TongDaDa/mobile-knowledge/blob/master/engineering/way.md)
+   + [AT可访问性](https://github.com/TongDaDa/mobile-knowledge/blob/master/engineering/way.md)
+   + [ios及其他机型常见问题](https://github.com/TongDaDa/mobile-knowledge/blob/master/engineering/issue.md)
 
 3. 微信开发
    + [微信系列问题](https://github.com/TongDaDa/mobile-knowledge/kind/weChat.md)
