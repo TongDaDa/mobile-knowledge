@@ -1,13 +1,13 @@
 ### dpr
 
-dpr 是 devicePixelRatio(设备像素比) 的简写,此属性位于全局当中(可配置，可枚举)，它表示1个`css像素`比多少个物理像素(设备像素)。
+dpr 是 devicePixelRatio(设备像素比) 的简写,此属性位于全局(window)当中(可配置，可枚举)，它表示1个`css像素`比多少个物理像素(设备像素)。
 
-比如，我们使用css设置一个50*50像素的正方形。在dpr为1的设备中，它的真实物理像素分辨率为50*50，但是在dpr为2的设备当中
-却是100*100。
+比如，我们使用css设置一个50\*50像素的正方形。在dpr为1的设备中，它的真实物理像素分辨率为50\*50，但是在dpr为2的设备当中
+却是100*100。这是用户代理(浏览器)根据ppi为基准的提供的像素比。以上面的dpr为2的例子当中，它就表示 1 css pixel = 2 device pixel。
 
-> 它的出现正是在**浏览器**与**设备**两者之间表明两端的`像素比例`。
+> 它的出现正是在**物理像素与css像素**两者之间为开发者提供了`像素比例`。
 
-device pixel(物理像素) = window.devicePixelRetio * css px
+viewport这个html元标签，在我们设置device-width时，浏览器就会根据此比例值，去进行视口级的**缩小**。
 
 #### 它出现的意义?
 
@@ -21,20 +21,17 @@ web发展快速，如今伴随着HTML5技术，如微信端，hybrid等场景的
 
 我们先假设，如果没有devicePixelRatio的出现，即css像素 1px 对应物理像素的 1px ，在`小设备`上到底是啥样的呢？
 
-在ps上模拟大概是这样
+我在ps上模拟大概是这样
 
 <img src="https://github.com/TongDaDa/mobile-knowledge/blob/master/img/ppiExample.png?raw=true" />
 
-反应到页面上是这样的(这里使用viewport标签来模拟)
+注：可能不太直观，那么你可以试一下在你的移动端页面中，把viewport的device-width去掉。（😢没错，你的手机屏越是清晰页面就越是小)
 
-<img src="https://github.com/TongDaDa/mobile-knowledge/blob/master/img/screenPhoneUp.png?raw=true" />
+可见，它的体验效果并不好，因为通常显示屏不会把ppi配置太高，毕竟视距与移动端不一样。所以导致了两端的分辨率差距较大。
 
-可见，它的体验效果并不好，因为通常pc厂商不会把ppi配置太高，毕竟视距与移动端不一样。所以导致了两端的分辨率差距较大。
+浏览器为了解决这个问题，才出现了 devicePixelRatio 这个接口，**我认为**它是浏览器厂商根据手机ppi所设置的比例值.
 
-浏览器为了解决这个问题，才出现了 devicePixelRatio 这个api，我认为它是浏览器厂商根据手机ppi所设置的比例值.
-
-由于pc的ppi与mobile的ppi差距较大，导致的你在pc上看100px可能是长长的一条线，手机上看可能就那么一丁丁。当然，
-对于苹果的 [Retina屏幕](https://github.com/TongDaDa/mobile-knowledge/blob/master/base/retina.md)  又是另外一回事.
+由于pc的ppi与mobile的ppi差距较大，导致的你在pc上看100px可能是长长的一条线，手机上看可能就那么一丁丁.
 
 这样的情况下，我们需要有一个平台到设备之间的衔接，以更好的达到适配效果。
 
