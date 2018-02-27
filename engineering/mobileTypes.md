@@ -3,7 +3,7 @@
       都要打开浏览器，用户体验也随之受限。
 
 + (Android | IOS) Hybrid
-  - Hybird 目前比较流行，指原生App内嵌web页面，实现上是由一个webview层套前端页面，实现一种新模式：Native 做系统层，h5更偏向于业务层，主要优势是
+  - Hybird，指原生App内嵌web页面，实现上是由一个webview控件层套前端页面，在安卓和ios上webview早就出现在早期的app上， 这种模式为：Native 做系统层，h5更偏向于业务层，主要优势是
     - 面度复杂的大型App，由于h5页面是动态的不计入Native应用中，所以可以大大减少包体的大小，这一点特别适合电商类网站，因为它们业务链复杂多变。
     - 从公司的角度来讲，原生的native应用可以减少资金投入，相比与三端(Android,IOS,Web)工程师的成本减少太多了Andriod 与 IOS工程师 可以不用那么多了。
     - 面对多变的业务场景非常有优势，你想换个活动，难道还要打包上传一次App吗？如果是Hybird，直接上传你的页面.ok
@@ -11,7 +11,7 @@
     - 针对这个缺点，阿里对他们的Hybird也貌似做了类似的优化，说是引入UC的sdk(道听途说)，不过只能更接近原生应用，但终归是不能与之匹敌，面对它能解决的场景需求这点缺点还是能接受的。
 
 + React Native
-  - faceBook的跨平台框架，用同一套代码，实现两端(ios,android)应用。这个应该应该脱离了前端的范畴
+  - faceBook的跨平台框架，用同一套代码，实现两端(ios,android)应用(本质上与下面的Cordove是一样的，调用 Native 接口)。
 
 + PhoneGap & Cordova
     - phoneGap的第一行代码源于2008年，起初就是为了解决使用前端代码来写Android与ios应用，后来被Adobe收购，捐赠给Apache,Apache将这个项目命名为Cordova,之后Abode发布了
@@ -23,4 +23,4 @@
 
 总结:
 
-PhoneGap 与 Hybrid 都属于调用native原生，只不过 PhoneGap 只给你预留了一些现成的插件，而 Hybrid 自己实现则更灵活一些。
+PhoneGap 与 Hybrid 都属于调用native原生，只不过 PhoneGap 只给你预留了一些现成的插件，而 Hybrid 自己实现(可以与安卓ios工程师自由搭配)则更灵活一些。
