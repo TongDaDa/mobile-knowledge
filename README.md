@@ -19,7 +19,6 @@
      + [web in mobile 有哪些?](https://github.com/TongDaDa/mobile-knowledge/blob/master/engineering/mobileTypes.md)
 
 2. 开发方案
-
    + [移动端适配方案集锦](https://github.com/TongDaDa/mobile-knowledge/blob/master/engineering/way.md)
    + [图片资源加载及工具](https://github.com/TongDaDa/mobile-knowledge/blob/master/engineering/way.md)
    + [AT可访问性](https://github.com/TongDaDa/mobile-knowledge/blob/master/engineering/at.md)
